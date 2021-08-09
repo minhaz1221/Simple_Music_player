@@ -211,14 +211,16 @@ input[type="range"]::-webkit-slider-thumb{
     .right ,.left {
         height: 50%;
         width: 100%;
+        position: unset;
     }
     .left img {
         height: 200px;
-        margin-top: 30px;
+        position: absolute;
+        top: 89px;
     }
     .right .middle {
         position: absolute;
-        bottom: 44%;
+        top: 341px;
     }
 
     .right .middle button{
@@ -231,13 +233,9 @@ input[type="range"]::-webkit-slider-thumb{
     .right {
         margin-top: 130px;;
     }
-    .left img {
-        position: absolute;
-        top : 50px
-    }
     .right #title {
         position: absolute;
-        top: -243px;
+        top: 38px;
         width: 100%;
         text-align: center;
         font-size: 32px;
@@ -250,28 +248,28 @@ input[type="range"]::-webkit-slider-thumb{
         margin-right: 10px;
     }
     .left .volume {
-        bottom: -112px;
+        top: 300px;
     }
 
     .right .show_song_no {
-        top: -273px;
+        top: 5px;
         right: 8px;
     }
     .right #auto_play {
         position: absolute;
-        bottom: 14%;
+        top: 358px;
         font-size: 13px;
     }
     .right .duration {
         position: relative;
-        bottom: -42px;
+        top: 53px;
     }
     
     .right input[type="range"] {
     width: 80%;
     }
     .right #artist {
-        top: 6px;
+        top: 250px;
     }
 
 }
