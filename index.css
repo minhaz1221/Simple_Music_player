@@ -204,6 +204,9 @@ input[type="range"]::-webkit-slider-thumb{
 
 /*======================== responsive design============= */
 @media screen and (max-width: 992px) {
+    .main {
+	width: 100%;
+    }
     .right #title {
         font-size: 30px;
         width: 100%;
