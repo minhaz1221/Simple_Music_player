@@ -203,32 +203,75 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 /*======================== responsive design============= */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .main {
-	width: 100%;
+        flex-direction: column;
+        position: relative;   
     }
-    .right #title {
-        font-size: 30px;
+    .right ,.left {
+        height: 50%;
         width: 100%;
-        text-align: center;
-    }
-    .right #artist {
-        width: 100%;
-        text-align: center;
-    }
-    .right .middle{
-        margin-top: 60px;
-    }
-    .right input[type="range"] {
-        width: 80%;
-    }
-    .right .duration {
-        bottom: 13%;
-    }
-    .left .volume {
-        bottom: 8%;
     }
     .left img {
-        height: 245px;
+        height: 200px;
+        margin-top: 30px;
     }
+    .right .middle {
+        position: absolute;
+        bottom: 44%;
+    }
+
+    .right .middle button{
+        height: 50px;
+        width: 50px;
+    }
+    .right i {
+        font-size: 13px;
+    }
+    .right {
+        margin-top: 130px;;
+    }
+    .left img {
+        position: absolute;
+        top : 50px
+    }
+    .right #title {
+        position: absolute;
+        top: -243px;
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+    .main #logo {
+        font-size: 20px;
+        left: 15px;
+    }
+    .main #logo i{
+        margin-right: 10px;
+    }
+    .left .volume {
+        bottom: -112px;
+    }
+
+    .right .show_song_no {
+        top: -273px;
+        right: 8px;
+    }
+    .right #auto_play {
+        position: absolute;
+        bottom: 14%;
+        font-size: 13px;
+    }
+    .right .duration {
+        position: relative;
+        bottom: -42px;
+    }
+    
+    .right input[type="range"] {
+    width: 80%;
+    }
+    .right #artist {
+        top: 6px;
+    }
+
 }
